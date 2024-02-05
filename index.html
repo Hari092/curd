@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>JavaScript CRUD Operations Using LocalStorage</h2>
+    </header>
+    <main>
+        <div class="curd" id="curd">
+            <div id="insert" class="insert">
+                <h3>Insert/Update Data</h3>
+                <h4>Enter a key and value to add or update records</h4>
+                <form id="form" class="form">
+                    <input type="text" name="insertKey" id="insertKey" placeholder="Enter Key">
+                    <input type="text" name="insertValue" id="insertValue"  placeholder="Enter value"><br>
+                    <button type="submit" class="btn" id="submitbtn">INSERT DATA</button>
+                </form>
+                
+            </div>
+            <div class="read" id="read">
+                <h3>Read Data</h3>
+                <h4>Enter a key and value for the record</h4>
+                <div class="getRead">
+                    <input type="text" name="getKey" id="getKey" placeholder="Enter Key">
+                    <button type="submit" class="btn" id="readbtn">READ DATA</button>
+                </div>
+                <div class="displayRead"></div>
+            </div>
+            <div class="delete" id="delete">
+                <h3>Delete Data</h3>
+                <h4>Enter a key to delete the record associated with that key</h4>
+                <div class="getRead">
+                    <input type="text" name="getKey" id="deleteKey" placeholder="Enter Key">
+                    <button type="submit" class="btn" id="deletebtn">DELETE DATA</button>
+                </div>
+            </div>
+        </div>
+        <div class="displaycurd" id="displaycurd">
+            <h3>Local Storage</h3>
+            <h4 class="head">Add some key - value records using INSERT box</h4>
+            <h4 class="record">Records available in LocalStorage</h4>
+            <div class="showcurd">
+                <div class="display-container">
+                    <!-- <h4 id="displayKey"></h4>
+                    <h4 id="displayValue"></h4> -->
+                </div>
+            </div>
+            <button type="reset" class="deleteresponse">DELETE ALL DATA</button>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
