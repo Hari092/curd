@@ -128,7 +128,6 @@ function readData(){
     const cont=document.querySelector(".displayRead");
     cont.innerHTML='';
     cont.appendChild(h4);
+    readkey.value=''
   })
-
-  readkey.value=''
 }
